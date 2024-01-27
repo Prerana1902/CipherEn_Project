@@ -1,196 +1,54 @@
-*{
-  margin: 0;
-  padding: 0;
+* { 
+  margin: 0; 
+  padding: 0; 
   font-size: 10px;
-  font-family: 'Rubik', sans-serif;
-}
-header{ 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2.4rem;
-  background-color: #fff;
-}
-.main-nav-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 3.2rem;
-  text-decoration: none;
-}
+  font-style: 'Rubik' , sans-serif;
+} 
 
-.logo{
-  height: 7rem;
-}
-.main-nav-link:link,
-.main-nav-link:visited{
-  display: inline-block;
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.main-nav-link:hover,
-.main-nav-link:active{
-  color: #e67e22;
-}
-.container{
+.container { 
+  width: 100%; 
   height: 100vh;
-  background-image: linear-gradient( rgba(39, 78, 121, 0.6),rgba(40, 90, 144, 0.6)) ,url(sits2.jpg);
-  background-size: cover;
-  position: relative;
-}
-.container-main{
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50% ,-50%);
-}
-h1{
-  font-size: 5.2rem;
-  color: #fff;
-  padding-bottom: 3rem;
-}
-.container-main p {
-  font-size: 1.6rem;
-  font-display:initial;
-  padding-bottom: 4.8rem;
-}
-.btn:link,
-.btn:visited{
-    font-size: 20px;
-    font-weight: 700;
-    background-color: rgb(25, 25, 25);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    padding: 16px 32px ;
-}
-.btn:hover,
-.btn:active{
-  background-color: rgb(55, 55, 55);
-}
-.main-head{
-  padding-bottom:9.6rem ;
-}
-.container-first{
-  max-width: 120rem;
-  padding: 0 3.2rem;
-}
-.container-next{
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-  display: grid;
-  gap: 9.2rem;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 9.6rem;
-}
-h2{
-  font-size: 5.2rem;
-  color: #495057;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.5;
-  padding-bottom: 3.2rem;
-}
- .step-number{ 
-  font-size: 9.2rem;
-  font-weight: 600;
-  color: #eee;
- }
- h3{
-  font-size: 3.6rem;
-  font-weight: 600;
-  letter-spacing: -0.5;
-  margin-bottom: 3.6rem;
-  color: #495057;
- }
- .step-description{
-  font-size: 1.8rem;
-  color: #868e96;
- }
- .heading{
-  padding-top: 3.6rem;
-  font-size: 5.6rem;
-  color: #495057;
-  text-align: center;
- }
- .book{
-  width: 50rem;
-  margin: 0 auto;
-  background-position: center;
-  background-size: cover;
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.7);
-}
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+} 
+ h1 { 
+  color:#464646; 
+  font-weight: 700; 
+  font-size: 3rem; 
+  text-align: center; 
+} 
 
-.book form{
-  margin:3.6rem auto 3.6rem auto;
-  max-width: 60rem;
-  border-radius: var(--border-radius-hover);
-  padding:3rem;
-  border:var(--border);
-}
+.temp-converter { 
+  display: flex; 
+  width: 30%; 
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center; 
+  background: #e66262; 
+  border-radius: 10px; 
+  padding: 5rem 2rem; 
+} 
 
-.book form .box{
-  width:100%;
-  padding:1rem 1.2rem;
-  border-radius: .5rem;
-  font-size: 1.6rem;
-  background:none;
-  text-transform: none;
-  color:var(--main-color);
-  border:var(--border);
-  margin:.7rem 0;
-  box-shadow: 0px 10px 10px 0px rgba(35, 35, 35, 0.7);
-}
+.temp { 
+  display: flex;
+  flex-direction: column;
+  flex-basis: 32%; 
+  text-align: center; 
+} 
 
-.book form .box:focus{
-  border:var(--border-hover);
-}
+.temp label { 
+  font-size: 2rem; 
+  font-weight: 700; 
+  margin-bottom: 10px; 
+  color: #fff; 
+} 
 
-.book form textarea{
-  height:15rem;
-  resize: none;
-}
-.btn-submit{
-  font-size: 1.2rem;
-  padding: 1.2rem 2.4rem;
-  border-radius: 5px;
-}
-
- .footer{
-  margin-bottom: 5.6rem;
-  padding: 0 9.6rem;
- }
-.footer .box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-  gap:1.5rem;
-}
-
-.footer .box-container .box h3{
-  font-size: 3.6rem;
-  padding:1rem 0;
-  color:var(--main-color);
-}
-
-.footer .box-container .box a{
-  display: block;
-  font-size: 1.8rem;
-  padding:1rem 0;
-  color:var(--main-color);
-}
-
-.footer .box-container .box a i{
-  padding-right: .5rem;
-}
-
-.footer .box-container .box a:hover i{
-  padding-right: 2rem;
-}
-
-
-
+.temp input { 
+  width: 16rem; 
+  height: 3rem; 
+  background: white; 
+  border-radius: 8px; 
+  text-align: center; 
+} 

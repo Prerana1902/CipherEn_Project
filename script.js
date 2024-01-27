@@ -1,12 +1,12 @@
-// add class navbarDark on navbar scroll
-const header = document.querySelector('.navbar');
+let celsius = document.getElementById('celsius'); 
+let kelvin =  document.getElementById('kelvin'); 
 
-window.onscroll = function() {
-    var top = window.scrollY;
-    if(top >=100) {
-        header.classList.add('navbarDark');
-    }
-    else {
-        header.classList.remove('navbarDark');
-    }
-}
+
+celsius.oninput = function () { 
+                  let k = (parseFloat(celsius.value) + 273.15); 
+                  kelvin.value = parseFloat(k.toFixed(2)); 
+        }  
+ kelvin.oninput = function () { 
+                  let c = (parseFloat(kelvin.value) - 273.15); 
+                  celsius.value = parseFloat(c.toFixed(2)); 
+        } 
